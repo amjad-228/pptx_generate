@@ -5,7 +5,7 @@ from pptx import Presentation
 from io import BytesIO
 
 app = FastAPI()
-templates = Jinja2Templates(directory="../dtemplates")  # مجلد HTML
+templates = Jinja2Templates(directory="../templates")  # مجلد HTML
 
 # =========================
 # واجهة المستخدم (HTML)
