@@ -27,7 +27,7 @@ def generate_pptx(
     id_number: str = Form(...)
 ):
     # فتح قالب PowerPoint
-    prs = Presentation("template.pptx")
+    prs = Presentation("../template.pptx")
     
     # قاموس الكلمات المفتاحية والقيم المدخلة
     replacements = {
