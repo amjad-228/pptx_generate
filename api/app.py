@@ -5,7 +5,7 @@ from pptx import Presentation
 from io import BytesIO
 
 app = FastAPI()
-templates = Jinja2Templates(directory="../templates")  # مجلد HTML
+templates = Jinja2Templates(directory="templates")  # مجلد HTML
 
 # =========================
 # واجهة المستخدم (HTML)
@@ -27,7 +27,7 @@ def generate_pptx(
     id_number: str = Form(...)
 ):
     # فتح قالب PowerPoint
-    prs = Presentation("../template.pptx")
+    prs = Presentation("template.pptx")
     
     # قاموس الكلمات المفتاحية والقيم المدخلة
     replacements = {
